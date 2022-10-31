@@ -1,16 +1,15 @@
 
 from src.till import Till
+
 class Room:
     def __init__(self, name, capacity, entry_fee):
         self.name=name
         self.capacity= capacity
         self.entry_fee= entry_fee
-        self.guests_checked_in =[]
-        self.play_list=[]
-        self.earnings= 0
+        self.guests_checked_in = []
+        self.play_list = []
+        self.till = Till()
         
-        
-
 
     def add_guest(self, guest):
         self.guests_checked_in.append(guest)

@@ -49,7 +49,8 @@ class TestGuest(unittest.TestCase):
 
     def test_guest_can_pay_tab(self):
         self.room2.tab_increases_as_guest_checks_in(self.guest4)
-        self.guest4.pay_tab()
+        print(self.guest4)
+        self.guest4.pay_tab(self.room2)
         self.assertEqual(0, self.guest4.tab)
         self.assertEqual(597, self.guest4.wallet)
         self.assertEqual(3, self.till.amount)

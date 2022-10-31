@@ -33,8 +33,8 @@ class TestRoom (unittest.TestCase):
     def test_room_has_entry_fee(self):
         self.assertEqual(2.50, self.room1.entry_fee)
     
-    def test_room_has_earnings(self):
-        self.assertEqual(0,self.room3.earnings)
+    # def test_room_has_earnings(self):
+    #     self.assertEqual(0,self.room3.earnings)
 
     def test_room_has_playlist(self):
         self.assertEqual(0, len(self.room1.play_list))
